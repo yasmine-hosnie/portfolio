@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Yasmeen Lasheen — Frontend Developer</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <meta name="theme-color" content="#0f1720">
+</head>
+
+<body>
+    <div class="page" id="page">
+
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container header-inner">
+                <!-- Logo (NO dot) -->
+                <a class="logo" href="#home">Yasmeen</a>
+
+                <nav class="nav" aria-label="Primary navigation">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme"></button>
+                    <a class="btn-outline" id="download-cv" href="YOUR_CV_LINK.pdf" target="_blank"
+                        rel="noopener">Download CV</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- mobile nav -->
+            <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+                <ul>
+                    <li><a href="#home" class="mobile-link">Home</a></li>
+                    <li><a href="#about" class="mobile-link">About</a></li>
+                    <li><a href="#projects" class="mobile-link">Projects</a></li>
+                    <li><a href="#skills" class="mobile-link">Skills</a></li>
+                    <li><a href="#contact" class="mobile-link">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Hero / Home -->
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1 class="reveal">Hi, I’m <span class="name-highlight">Yasmeen Lasheen</span></h1>
+                    <p class="lead reveal delay-1">Frontend Developer — React • TypeScript • Responsive Design</p>
+                    <p class="reveal delay-2">I build accessible, maintainable and beautiful interfaces. I love solving
+                        UX problems and shipping polished features.</p>
+
+                    <div class="hero-cta reveal delay-3">
+                        <a href="#contact" class="btn-primary">Hire Me</a>
+                        <a id="cv-link-hero" class="btn-ghost" href="YOUR_CV_LINK.pdf" target="_blank"
+                            rel="noopener">Download CV</a>
+                    </div>
+
+                    <div class="socials reveal delay-4" aria-hidden="false">
+                        <a class="social-btn" href="https://www.linkedin.com/in/yasmeen-lasheen-5a4a0a27b"
+                            target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                        </a>
+                        <a class="social-btn" href="https://github.com/yasmine-hosnie" target="_blank" rel="noopener"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i><span>GitHub</span>
+                        </a>
+                        <a class="social-compact" href="mailto:lasheenyasmeen40@gmail.com" aria-label="Email"><i
+                                class="fa-regular fa-envelope"></i></a>
+                        <a class="social-compact" href="tel:01094180907" aria-label="Phone"><i
+                                class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-image reveal delay-2">
+                    <!-- Replace this placeholder with your real image link -->
+                    <img src="Images/portfolioo.jpg" alt="Yasmeen portrait" id="hero-photo">
+                </div>
+            </div>
+
+            <div class="hero-stats container">
+                <div class="stat">
+                    <strong id="projects-count">—</strong>
+                    <span>Projects</span>
+                </div>
+                <div class="stat">
+                    <strong>2+</strong>
+                    <span>Years experience</span>
+                </div>
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Responsive</span>
+                </div>
+                <div class="stat">
+                    <strong>Passion</strong>
+                    <span>Always</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about section">
+            <div class="container about-grid">
+                <!-- Photo placed left, info right -->
+                <div class="about-photo reveal">
+                    <img src="Images/portfolioo.jpg" alt="Yasmeen profile">
+                </div>
+
+                <div class="about-content reveal delay-1">
+                    <h2>About Me</h2>
+                    <p>I’m a frontend developer (React) focused on building clean, accessible UI and fast user
+                        experiences. I use modern tools and best practices to ship production-ready apps.</p>
+
+                    <div class="about-info-grid">
+                        <div>
+                            <h4>Name</h4>
+                            <p>Yasmeen Lasheen</p>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Benha, Egypt</p>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:lasheenyasmeen40@gmail.com">lasheenyasmeen40@gmail.com</a></p>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:01094180907">01094180907</a></p>
+                        </div>
+                        <div class="projects-summary">
+                            <h4>Top Projects</h4>
+                            <p>FreshCart (E-commerce with React & Tailwind), personal UI components and React demos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Projects</h2>
+                    <p>Selected repositories — click to view on GitHub.</p>
+                </div>
+
+                <div id="projects-grid" class="projects-grid reveal delay-1">
+                    <!-- freshcart injected by JS then other repos -->
+                    <div class="loader" id="projects-loader">Loading projects...</div>
+                </div>
+
+                <div class="projects-footer reveal delay-2">
+                    <a href="https://github.com/yasmine-hosnie" target="_blank" rel="noopener" class="btn-ghost">View
+                        all on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Skills</h2>
+                    <p>Technologies & strengths I use to build production-ready interfaces.</p>
+                </div>
+
+                <div class="skills-grid reveal delay-1">
+                    <!-- more skills -->
+                    <div class="skill">
+                        <h4>React</h4>
+                        <div class="prog"><span style="width:88%" data-progress="88%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Tailwind CSS</h4>
+                        <div class="prog"><span style="width:85%" data-progress="85%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>TypeScript</h4>
+                        <div class="prog"><span style="width:78%" data-progress="78%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>SCSS</h4>
+                        <div class="prog"><span style="width:82%" data-progress="82%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>HTML & CSS</h4>
+                        <div class="prog"><span style="width:96%" data-progress="96%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <div class="prog"><span style="width:84%" data-progress="84%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Git & GitHub</h4>
+                        <div class="prog"><span style="width:88%" data-progress="88%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Bootstrap</h4>
+                        <div class="prog"><span style="width:70%" data-progress="70%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>C++</h4>
+                        <div class="prog"><span style="width:66%" data-progress="66%"></span></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Problem Solving</h4>
+                        <div class="prog"><span style="width:90%" data-progress="90%"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact section">
+            <div class="container contact-grid reveal">
+                <div class="contact-card">
+                    <h3>Let's work together</h3>
+                    <p>Interested in collaborating or hiring? Send a quick note and I'll reply soon.</p>
+
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mvgwvbdg" method="POST"
+                        novalidate>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text" required placeholder="Your name">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Write your message..."></textarea>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </div>
+                        <p id="form-note" class="form-note" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <aside class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><strong>Email:</strong> <a
+                                href="mailto:lasheenyasmeen40@gmail.com">lasheenyasmeen40@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:01094180907">01094180907</a></li>
+                        <li><strong>Location:</strong> Benha, Egypt</li>
+                    </ul>
+
+                    <div class="contact-quicklinks">
+                        <a class="social-pill" href="https://github.com/yasmine-hosnie" target="_blank"
+                            rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a class="social-pill" href="https://www.linkedin.com/in/yasmeen-lasheen-5a4a0a27b"
+                            target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="footer-left">
+                    <div class="footer-brand">© <span id="year"></span> <strong>Yasmeen Lasheen</strong></div>
+                    <div class="footer-note">Frontend Developer — React • TypeScript • UI</div>
+                </div>
+
+                <div class="footer-right">
+                    <a class="footer-link" href="https://github.com/yasmine-hosnie" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a class="footer-link" href="https://www.linkedin.com/in/yasmeen-lasheen-5a4a0a27b" target="_blank"
+                        rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+</body>
+
+</html>
