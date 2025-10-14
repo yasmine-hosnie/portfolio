@@ -14,7 +14,7 @@ I specialize in building responsive and high-performance web applications using 
 
 - 🎓 B.Sc. in Computer Science (Benha University)
 - 🧠 Trained at **ITI** (Web Development Using React)
-- 💻 React Course graduate from **Root Academy**
+- 💻 React Course graduate from **route Academy**
 - 💡 Constant learner focusing on UI/UX and modern web tools
 
 ---
