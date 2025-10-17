@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Yasmeen Lasheen — Frontend Developer</title>
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         crossorigin="anonymous">
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 
     <meta name="theme-color" content="#0f1720">
@@ -22,10 +19,8 @@
 <body>
     <div class="page" id="page">
 
-        <!-- Header -->
         <header class="site-header">
             <div class="container header-inner">
-                <!-- Logo (NO dot) -->
                 <a class="logo" href="#home">Yasmeen</a>
 
                 <nav class="nav" aria-label="Primary navigation">
@@ -40,7 +35,8 @@
 
                 <div class="header-actions">
                     <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme"></button>
-                    <a class="btn-outline" id="download-cv" href="https://github.com/yasmine-hosnie/portfolio/blob/main/CV%20Yasmeen.pdf" target="_blank"
+                    <a class="btn-outline" id="download-cv"
+                        href="https://github.com/yasmine-hosnie/portfolio/blob/main/CV%20Yasmeen.pdf" target="_blank"
                         rel="noopener">Download CV</a>
                     <button class="hamburger" id="hamburger" aria-label="Open menu">
                         <span></span><span></span><span></span>
@@ -48,7 +44,6 @@
                 </div>
             </div>
 
-            <!-- mobile nav -->
             <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
                 <ul>
                     <li><a href="#home" class="mobile-link">Home</a></li>
@@ -60,7 +55,6 @@
             </div>
         </header>
 
-        <!-- Hero / Home -->
         <section id="home" class="hero section">
             <div class="container hero-grid">
                 <div class="hero-text">
@@ -71,8 +65,9 @@
 
                     <div class="hero-cta reveal delay-3">
                         <a href="#contact" class="btn-primary">Hire Me</a>
-                        <a id="cv-link-hero" class="btn-ghost" href="https://github.com/yasmine-hosnie/portfolio/blob/main/CV%20Yasmeen.pdf" target="_blank"
-                            rel="noopener">Download CV</a>
+                        <a id="cv-link-hero" class="btn-ghost"
+                            href="https://github.com/yasmine-hosnie/portfolio/blob/main/CV%20Yasmeen.pdf"
+                            target="_blank" rel="noopener">Download CV</a>
                     </div>
 
                     <div class="socials reveal delay-4" aria-hidden="false">
@@ -92,14 +87,13 @@
                 </div>
 
                 <div class="hero-image reveal delay-2">
-                    <!-- Replace this placeholder with your real image link -->
                     <img src="Images/portfolioo.jpg" alt="Yasmeen portrait" id="hero-photo">
                 </div>
             </div>
 
             <div class="hero-stats container">
                 <div class="stat">
-                    <strong id="projects-count">—</strong>
+                    <strong id="projects-count">10+</strong>
                     <span>Projects</span>
                 </div>
                 <div class="stat">
@@ -117,10 +111,8 @@
             </div>
         </section>
 
-        <!-- About -->
         <section id="about" class="about section">
             <div class="container about-grid">
-                <!-- Photo placed left, info right -->
                 <div class="about-photo reveal">
                     <img src="Images/portfolioo.jpg" alt="Yasmeen profile">
                 </div>
@@ -156,17 +148,107 @@
             </div>
         </section>
 
-        <!-- Projects -->
         <section id="projects" class="projects section">
             <div class="container">
                 <div class="section-header reveal">
                     <h2>Projects</h2>
-                    <p>Selected repositories — click to view on GitHub.</p>
+                    <p>Selected works highlighting my skills in UI/UX and modern frontend technologies.</p>
                 </div>
 
                 <div id="projects-grid" class="projects-grid reveal delay-1">
-                    <!-- freshcart injected by JS then other repos -->
-                    <div class="loader" id="projects-loader">Loading projects...</div>
+
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="Images/freshcart.png" alt="FreshCart E-commerce Project" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3>FreshCart E-commerce</h3>
+                            <p class="project-description">A responsive e-commerce platform built with React and
+                                Tailwind CSS, featuring product listing, shopping cart functionality, and a smooth
+                                checkout process.</p>
+                            <div class="project-links">
+                                <a href="https://yasmine-hosnie.github.io/freshcart/" target="_blank" rel="noopener"
+                                    class="btn-link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/yasmine-hosnie/freshcart" target="_blank" rel="noopener"
+                                    class="btn-link">
+                                    <i class="fa-brands fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="Images/toDoList.png" alt="Project 2 Name" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3>To Do List Website</h3>
+                            <p class="project-description">A simple, elegant, and fully responsive To-Do List web app
+                                built using HTML, CSS, and JavaScript.
+                                It allows users to manage daily tasks with filtering, search, progress tracking, and
+                                dark mode support.</p>
+                            <div class="project-links">
+                                <a href="https://to-do-list-psi-eight-21.vercel.app/" target="_blank" rel="noopener"
+                                    class="btn-link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/yasmine-hosnie/toDoList" target="_blank" rel="noopener"
+                                    class="btn-link">
+                                    <i class="fa-brands fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="Images/TypingSpeed.png" alt="Project 2 Name" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3>Typing Speed Game</h3>
+                            <p class="project-description">A fun and interactive typing game built using HTML, CSS, and
+                                JavaScript.
+                                This project helps users test and improve their typing speed and accuracy by typing
+                                randomly displayed words within a
+                                limited time.</p>
+                            <div class="project-links">
+                                <a href="https://typing-speed-test-game-umber.vercel.app/" target="_blank"
+                                    rel="noopener" class="btn-link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/yasmine-hosnie/typingSpeedTestGame" target="_blank"
+                                    rel="noopener" class="btn-link">
+                                    <i class="fa-brands fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="Images/template.png" alt="Project 4 Name" class="project-image">
+                        </div>
+                        <div class="project-content">
+                            <h3>Project Name Two</h3>
+                            <p class="project-description">A responsive and modern HTML & CSS website template inspired
+                                by the Elzero Web School design.
+                                This project demonstrates front-end structure, reusable components, and clean UI layout
+                                using only HTML, CSS, and Font
+                                Awesome icons.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://elzero-template-sepia.vercel.app/" target="_blank" rel="noopener" class="btn-link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/yasmine-hosnie/elzero-template" target="_blank" rel="noopener" class="btn-link">
+                                    <i class="fa-brands fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
 
                 <div class="projects-footer reveal delay-2">
@@ -176,7 +258,6 @@
             </div>
         </section>
 
-        <!-- Skills -->
         <section id="skills" class="skills section">
             <div class="container">
                 <div class="section-header reveal">
@@ -185,52 +266,54 @@
                 </div>
 
                 <div class="skills-grid reveal delay-1">
-                    <!-- more skills -->
-                    <div class="skill">
+                    <div class="skill-box">
+                        <i class="fa-brands fa-react"></i>
                         <h4>React</h4>
-                        <div class="prog"><span style="width:88%" data-progress="88%"></span></div>
                     </div>
-                    <div class="skill">
-                        <h4>Tailwind CSS</h4>
-                        <div class="prog"><span style="width:85%" data-progress="85%"></span></div>
+                    <div class="skill-box">
+                        <i class="fa-brands fa-square-js"></i>
+                        <h4>JavaScript (ES6+)</h4>
                     </div>
-                    <div class="skill">
+                    <div class="skill-box">
+                        <i class="fa-solid fa-code"></i>
                         <h4>TypeScript</h4>
-                        <div class="prog"><span style="width:78%" data-progress="78%"></span></div>
                     </div>
-                    <div class="skill">
-                        <h4>SCSS</h4>
-                        <div class="prog"><span style="width:82%" data-progress="82%"></span></div>
+                    <div class="skill-box">
+                        <i class="fa-brands fa-html5"></i>
+                        <h4>HTML5 & Accessibility</h4>
                     </div>
-                    <div class="skill">
-                        <h4>HTML & CSS</h4>
-                        <div class="prog"><span style="width:96%" data-progress="96%"></span></div>
+                    <div class="skill-box">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS3 & SCSS</h4>
                     </div>
-                    <div class="skill">
-                        <h4>JavaScript</h4>
-                        <div class="prog"><span style="width:84%" data-progress="84%"></span></div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                        <h4>Tailwind CSS</h4>
                     </div>
-                    <div class="skill">
+                    <div class="skill-box">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <h4>Responsive Design</h4>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-brands fa-git-alt"></i>
                         <h4>Git & GitHub</h4>
-                        <div class="prog"><span style="width:88%" data-progress="88%"></span></div>
                     </div>
-                    <div class="skill">
-                        <h4>Bootstrap</h4>
-                        <div class="prog"><span style="width:70%" data-progress="70%"></span></div>
-                    </div>
-                    <div class="skill">
-                        <h4>C++</h4>
-                        <div class="prog"><span style="width:66%" data-progress="66%"></span></div>
-                    </div>
-                    <div class="skill">
+                    <div class="skill-box">
+                        <i class="fa-solid fa-terminal"></i>
                         <h4>Problem Solving</h4>
-                        <div class="prog"><span style="width:90%" data-progress="90%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h4>Bootstrap</h4>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>Restful APIs</h4>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
         <section id="contact" class="contact section">
             <div class="container contact-grid reveal">
                 <div class="contact-card">
@@ -280,7 +363,6 @@
             </div>
         </section>
 
-        <!-- Footer -->
         <footer class="site-footer">
             <div class="container footer-inner">
                 <div class="footer-left">
@@ -299,7 +381,6 @@
 
     </div>
 
-    <!-- Scripts -->
     <script src="main.js" defer></script>
 </body>
 
